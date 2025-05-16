@@ -1,0 +1,9 @@
+services:
+  dash-projetos:
+    container_name: dash_sults
+    build: .
+    ports:
+      - "8050:8050"
+    volumes:
+      - ./app:/app
+      - ./app/data:/data
